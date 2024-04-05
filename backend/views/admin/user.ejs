@@ -1,0 +1,385 @@
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.data-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-item p {
+    margin: 5px 0;
+}
+
+.data-item p:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+    .data-item {
+        width: 90%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 300px;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+
+
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+:root {
+  --black: #1c1c1c;
+  --gray: #7E7E7E;
+  --gray-light: #E4E4E4;
+  --red: #b30000;
+  --font-size-base: 1rem;
+  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --border-radius: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--black);
+  font-size: var(--font-size-base);
+  background-color: #FAF5EE;
+  background-image: url("/img/img-noise-361x370.png");
+  margin: 0;
+}
+
+a { color: var(--black); }
+h1 { font-size: var(--font-size-xl); }
+h2 { font-size: var(--font-size-lg); }
+h3 { font-size: var(--font-size-md); }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+select,
+textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: var(--black);
+  border: none;
+  color: white; 
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px; 
+  cursor: pointer;
+}
+
+.btn-delete {
+  padding: 10px 16px;
+  background-color: var(--red);
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Layout */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main {
+  padding: 20px 0;
+}
+
+/* Hero Section */
+.hero-image {
+  max-height: 528px;
+  filter: drop-shadow(0px 44px 34px rgba(0, 0, 0, 0.25));
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+
+/* Main Header */
+.header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "logo button"
+  "menu menu";
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+    "logo menu button";
+  }
+}
+
+.header__logo {
+  font-weight: 800;
+  font-size: 25px;
+  text-decoration: none;
+  grid-area: logo;
+}
+
+.header__logo:hover {
+  text-decoration: underline;
+}
+
+.header__nav {
+  justify-content: center;
+  display: flex;
+  grid-area: menu;
+}
+
+.header__logo, .header__nav, .header__button {
+  width: 100%;
+}
+
+.header__button {
+  display: flex;
+  justify-content: end;
+  grid-area: button;
+}
+
+.header__button button {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  border: 0;
+  padding: 6px 12px;
+  background: none;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.header__button button:hover {
+  border: 2px solid var(--black);
+}
+
+/* Header -> Navigation */
+.header__nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  padding: 0;
+}
+
+.header__nav ul a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.header__nav ul a.active {
+  color: #7E7E7E;
+}
+
+.header__nav ul a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .article-ul li a {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .article-list__date {
+    text-align: right;
+  }
+}
+
+.article-ul li {
+  font-size: 24px;
+  cursor: pointer;
+  transition: filter 0.1s;
+}
+
+.article-ul li:not(:last-child) {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.article-ul li:hover {
+  filter: none;
+}
+
+.article-ul:hover li {
+  filter: blur(3px);
+}
+
+.article-ul:hover li:hover {
+  filter: none;
+}
+
+
+.article {
+  white-space: pre-wrap;
+}
+
+
+/* Footer */
+.footer {
+  margin: 4rem;
+  text-align: center;
+}
+
+
+</style>
+<header class="header">
+    <a href="/admin" class="header__logo">Admin Panel</a>
+  
+    <nav class="header__nav">
+      <ul>
+        <li>
+          <a href="/admin/newsletter" class="">Newsletters</a>
+        </li>
+        <li>
+          <a href="/admin/user" class="">Registered Users</a>
+        </li>
+      </ul>
+  
+    </nav>
+  
+    <div class="header__button">
+      <form action="/admin/logout" method="get">
+        <button type="submit">
+          Logout
+        </button>
+      </form>
+
+    </div>
+  
+  </header>
+    <h1>User Information</h1>
+    <div class="data-container">
+        <% data.forEach(item => { %>
+            <div class="data-item">
+                <p>Email: <%= item.email %></p>
+                <p>Parent's Name: <%= item.pname %></p>
+                <p>Participant's Name: <%= item.paname %></p>
+                <p>Phone: <%= item.phone %></p>
+                <p>Grade: <%= item.grade %></p>
+                <p>Platform: <%= item.platform %></p>
+                <p>Location: 
+                    <% item.location.forEach(loc => { %>
+                        <%= loc %><br>
+                    <% }); %>
+                </p>
+                <p>Disability: <%= item.disability %></p>
+                <p>Disability Description: <%= item.disability_desc %></p>
+                <p>Courses: 
+                    <% item.course.forEach(course => { %>
+                        <%= course %><br>
+                    <% }); %>
+                </p>
+                <p>Sessions: 
+                    <% item.session.forEach(session => { %>
+                        <%= session %><br>
+                    <% }); %>
+                </p>
+                <p>Awareness: 
+                    <% item.about.forEach(about => { %>
+                        <%= about %><br>
+                    <% }); %>
+                </p>
+                <p>Other: <%= item.other %></p>
+            </div>
+        <% }); %>
+    </div>
+

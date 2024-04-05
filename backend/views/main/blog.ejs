@@ -1,0 +1,212 @@
+
+<div class="page-wraper">
+	<!-- <div id="loading-icon-bx"></div> -->
+	<!-- Header Top ==== -->
+    <header class="header rs-nav">
+		<div class="top-bar">
+			<div class="container">
+				<div class="row d-flex justify-content-between">
+					<div class="topbar-right">
+						<ul>
+							<li>
+								<!-- <select class="header-lang-bx">
+									<option data-icon="flag flag-uk">English UK</option>
+									<option data-icon="flag flag-us">English US</option>
+								</select>
+							</li>							
+							<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdYL-p75JV0Ugz76t-W15HupWk8vHvRGq-VAe4_ngnBAyegQQ/viewform" target="_blank">Register</a></li> -->
+							<li><marquee behavior="" direction=""><h6 class="booold" style="color:white;">Call Us: Lagos: +234 8124019660 | Abuja: +234 9031829347 | Ghana: (+233302546703) | Côte d'Ivoire (+22522468434).</h6></marquee></li>
+						</ul> 
+					</div>
+					<div class="topbar-left">
+						<ul>
+							<li>
+								<a href="/contact">CONTACT US</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sticky-header navbar-expand-lg">
+            <div class="menu-bar clearfix">
+                <div class="container clearfix">
+					<!-- Header Logo ==== -->
+					<div class="menu-logo">
+						<a href="/"><img src="/images/ispace-logoe.png" alt=""></a>
+					</div>
+					<!-- Mobile Nav Button ==== -->
+                    <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<!-- Author Nav ==== -->
+                    <div class="secondary-menu">
+                        <div class="secondary-inner">
+                            <ul>
+								<li><a href="https://www.facebook.com/iSPACE2015/" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/ispace-proxynet-645345181/" class="btn-link"><i class="fa fa-linkedin"></i></a></li>		
+								<li><a href="https://www.instagram.com/ispaceclub/" class="btn-link"><i class="fa fa-instagram"></i></a></li>  
+								<li><a href="https://twitter.com/ISPACECLUB1" class="btn-link"><i class="fa fa-twitter"></i></a></li>															
+							</ul>
+						</div>
+                    </div>					                    
+					<!-- Navigation Menu ==== -->
+                    <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+						<div class="menu-logo">
+							<a href="/"><img src="assets/images/ispace-logoe.png" alt=""></a>
+						</div>
+                        <ul class="nav navbar-nav">	
+						<li ><a href="/">Home</a</li>
+						<li class=""><a href="/about">About</a>	</li>
+						<li class=""><a href="/projects">Projects</a>								
+							</li>
+							<li class=""> <a href="/courses">Courses</a>								
+							</li>
+							<li class="active"><a href="/blog">Blog </a>	
+							<li class=""><a href="/affiliate">Affiliate </a>
+							<!-- <li><a href="https://ispaceacademy.proxynetgroup.com/foundation">Foundation </a>														 -->
+							</li>
+							<li class="nav-dashboard"><a href="https://promallshop.com/shop/coding-robotic-kits" target="_blank">SHOP NOW </a>								
+							</li>
+						</ul>
+						<div class="nav-social-link">
+							<a href="https://www.facebook.com/iSPACE2015/"><i class="fa fa-facebook"></i></a>							
+							<a href="https://www.linkedin.com/in/ispace-proxynet-645345181/"><i class="fa fa-linkedin"></i></a>
+							<a href="https://www.instagram.com/ispaceclub/"><i class="fa fa-instagram"></i></a>
+							<a href="https://twitter.com/ISPACECLUB1" target="_blank" class="btn-link"><i class="fa fa-twitter"></i></a>
+						</div>
+                    </div>
+					<!-- Navigation Menu END ==== -->
+                </div>
+            </div>
+        </div>
+    </header> <!-- Inner Content Box ==== -->
+ <div class="page-content bg-white">
+        <!-- Page Heading Box ==== -->
+        <div class="page-banner ovbl-dark" style="background-image:url(/images/summ2.jpg); background-position:bottom">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <h1 class="text-white">Blog </h1>
+				 </div>
+            </div>
+        </div>
+		<div class="breadcrumb-row">
+			<div class="container">
+				<ul class="list-inline">
+					<li><a href="/">Home</a></li>
+					<li>Recent Blog Posts </li>
+				</ul>
+			</div>
+		</div>
+		<!-- Page Heading Box END ==== -->
+		<!-- Page Content Box ==== -->
+        <div class="content-block">
+			<!-- Blog Grid ==== -->
+			<div class="section-area section-sp1">
+				<div class="container">
+					
+					<div class="ttr-blog-grid-3 row" id="masonry">
+						<% data.forEach(blog => { %>
+                    						<div class="post action-card col-lg-4 col-md-6 col-sm-12 col-xs-12 m-b40">
+							<div class="recent-news">
+								<div class="action-box">
+									<img src="<%= blog.image %>"" alt="" width="500" height="200">
+								</div>
+								<div class="info-bx">
+									<ul class="media-post">
+										<li><i class="fa fa-calendar"></i><%= blog.date %></li>
+										<!-- <li><a href="#"><i class="fa fa-user"></i>By William</a></li> -->
+									</ul>
+									<h5 class="post-title"><a href="/blog/<%= blog._id %>"><%= blog.title %></a></h5>                                    
+                                    <p>....</p>
+									<div class="post-extra">
+										<a href="/blog/<%= blog._id %>" class="btn-link">READ MORE</a>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<% }); %>										
+                        					</div>
+				</div>
+			</div>
+			<!-- Blog Grid END ==== -->
+        </div>
+		<!-- Page Content Box END ==== -->
+    </div>
+    <!-- Page Content Box END ==== --><!-- Content END-->
+	<!-- Footer ==== -->
+    <footer>
+        <div class="footer-top">
+			<div class="pt-exebar">
+				<div class="container">
+					<div class="d-flex align-items-stretch">
+						<div class="pt-logo mr-auto">
+							<a href="/"><img src="/images/ispace-logoe.png" style="width:30%;" alt=""/></a>
+						</div>
+						<div class="pt-social-link">
+							<ul class="list-inline m-a0">
+								<li><a href="https://www.facebook.com/iSPACE2015/" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/ispace-proxynet-645345181/" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://www.instagram.com/ispaceclub/" class="btn-link"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="https://twitter.com/ispaceclub1" class="btn-link"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+						<div class="pt-btn-join">
+						<a href="/contact" class="btn">CONTACT US </a>								
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="container">
+                <div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
+                        <div class="widget">
+                            <h5 class="footer-title">Subscribe to Our Newsletter</h5>							
+                            <div class="subscribe-form m-b20">
+								<form class="" action="/newsletter" method="post">
+									<div class=""></div>
+									<div class="input-group">
+										<input name="email" required="required"  class="form-control" placeholder="Your Email Address" type="email">
+										<span class="input-group-btn">
+											<button name="subscribe" value="Submit" type="submit" class="btn"><i class="fa fa-arrow-right"></i></button>
+										</span> 
+									</div>
+								</form>
+							</div>
+                        </div>
+                    </div>
+					<div class="col-12 col-lg-8 col-md-7 col-sm-12">
+						<div class="row">
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">Head Office:</h5>
+										<p >The Proxynet House, 5B, Adedeji Close, off Opebi Road, Ikeja, Lagos, Nigeria. <br><br> <a href="tel:+2348124019660">+2348124019660</a></p>
+								</div>
+							</div>
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">ABUJA Office:</h5>
+										<p >House 21, Street 693, Off Road 69, Gwarimpa, Abuja <br><br><a href="tel:+2349031829347">+2349031829347</a></p>						
+								</div>
+							</div>
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">GHANA Office:</h5>
+										<p >No 18 Nii Klu Osae Avenue, Off American House, Accra Ghana <br><br><a href="tel:+233302546703">+233302546703</a></p>
+								</div>
+							</div>
+						</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>       
+    </footer>
+
+
+    <button class="back-to-top fa fa-chevron-up" ></button>
+
+</div>
+
