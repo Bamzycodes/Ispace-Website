@@ -31,10 +31,10 @@ router.get('/', async (req, res) => {
  * GET /
  * Affilate - Affilate Page
 */
-router.get('/affilate', async (req, res) => {
+router.get('/affiliate', async (req, res) => {
   try {
 
-    res.render('main/affilate');
+    res.render('main/affiliate');
   } catch (error) {
     console.log(error);
   }
